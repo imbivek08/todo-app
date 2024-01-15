@@ -1,0 +1,22 @@
+.input{
+    height: 30px;
+    border-radius: 10px;
+}
+
+.sendInput{
+    height: 30px;
+    border-radius: 10px;
+}
+.sendInput:hover{
+    background-color: green;
+    color: white;
+    
+}
+.setInput{
+    display: flex;
+    gap: 10px;  
+}
+
+.demo{
+    color: white;
+}
