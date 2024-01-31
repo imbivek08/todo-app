@@ -1,6 +1,9 @@
 import React from 'react'
 import './TodoList.css'
 function TodoList(props) {
+  if(props.item===""){
+    return;
+  }else{
   return (
     <div>
       <li className='list'>
@@ -8,7 +11,7 @@ function TodoList(props) {
       </li> 
     </div>
     
-  )
+  )}
 }
 
 export default TodoList

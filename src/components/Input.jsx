@@ -17,10 +17,10 @@ function Input(props) {
       <button className='sendInput'
       onClick={()=>{
         props.addList(inputText)
-        console.log(inputText)
         setInputText("")
       }}>Add</button>
-      <div className='demo'>{setInputText}</div>
+      <div className='demo'>
+        {setInputText}</div>
     </div>
   )
 }
