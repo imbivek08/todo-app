@@ -6,21 +6,19 @@ function Input(props) {
   const [inputText,setInputText] = useState('');
 
   return (
-    <div className='setInput'>
+    <div className='set-input'>
       <input id='input' 
       className='input'
       value={inputText} 
-      placeholder='Add the Task'
+      placeholder="What's do you need to do?"
       onChange={e=>{
         setInputText(e.target.value)
       }} />
-      <button className='sendInput'
+      <button
       onClick={()=>{
         props.addList(inputText)
         setInputText("")
-      }}>Add</button>
-      <div className='demo'>
-        {setInputText}</div>
+      }}> +  Add</button>
     </div>
   )
 }

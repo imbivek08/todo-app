@@ -10,15 +10,18 @@ function App (){
     setListTodo([...listTodo,inputText]);
   }
   return (
-  <div>
-    <Input addList={addList} />
-    <h1>TODO</h1>
-    {listTodo.map((listItem,i)=>{
-      return (
-        <TodoList key={i} item={listItem}/>
-      )
-    })}
+  <div className='container'>
+    <h1>Todo App</h1>
     
+    <div className='todo-body'>
+      <div><h2>Tasks</h2></div>
+      {listTodo.map((listItem,i)=>{
+          return (
+          <TodoList key={i} item={listItem}/>
+        )
+      })}
+    </div>
+    <Input addList={addList} /> 
   </div>
   );
 
