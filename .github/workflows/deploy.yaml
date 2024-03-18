@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      NODE_VERSION: 20
+      NODE_VERSION: 18.19.1
     steps:
       - uses: actions/checkout@v3
 
